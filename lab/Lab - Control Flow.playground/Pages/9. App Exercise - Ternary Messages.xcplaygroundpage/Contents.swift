@@ -5,13 +5,11 @@
  */
 let totalQuestions: Int = 20
 let correctQuestions: Int = 18
+let feedback1: String = "You need to study more"
+let feedback2: String = "You're doing great."
 
-if Double(correctQuestions) / Double(totalQuestions) < 0.70 {
-    print("You need to study more!")
-} else {
-    print("You're doing great.")
-}
-
+let feedback = Double(correctQuestions) / Double(totalQuestions) < 0.70 ? feedback1 : feedback2
+print(feedback)
 
 
 //: [Previous](@previous)  |  page 9 of 9
